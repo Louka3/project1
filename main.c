@@ -34,21 +34,25 @@ int main(){
 
     printf("Using direct computation:\n\n");
     printf("Minimum value for a signed char: %d\n", -(int)pow(2, sizeof(char) * (8 - 1)));
-    printf("Maximum value for a signed char: %d\n", (int) pow(2, sizeof(char) * (8 - 1)) - 1);
+    printf("Maximum value for a signed char: %d\n", (int)pow(2, sizeof(char) * (8 - 1)) - 1);
     printf("Minimum value for a unsigned char: %d\n", 0);
-    printf("Maximum value for a unsigned char: %d\n", (int) pow(2, sizeof(char) * 8) - 1);
+    printf("Maximum value for a unsigned char: %d\n", (int)pow(2, sizeof(char) * 8) - 1);
     printf("CHAR_MIN: %d\n", CHAR_MIN);
     printf("CHAR_MAX: %d\n", CHAR_MAX);
     printf("-------------\n");
-    printf("Minimum value for a short int: %d\n", SHRT_MIN);
-    printf("Maximum value for a short int: %d\n", SHRT_MAX);
+    // float st_bit = (sizeof(short) * 8);
+    printf("Minimum value for a short int: %d\n", -(int)pow(2, (sizeof(short) * 8) - 1));
+    printf("Maximum value for a short int: %d\n", (int)pow(2, (sizeof(short) * 8) - 1) - 1);
     printf("Minimum value for a unsigned short int: %d\n", 0);
-    printf("Maximum value for a unsigned short int: %d\n", USHRT_MAX);
+    printf("Maximum value for a unsigned short int: %d\n", (unsigned int)pow(2, (sizeof(short) * 8)) - 1);
     printf("-------------\n");
-    printf("Minimum value for a signed int: %i\n", INT_MIN);
-    printf("Maximum value for a signed int: %i\n", INT_MAX);
+    int int_bits = sizeof(int) * 8;
+    printf("%d\n", int_bits);
+    printf("Signed int: %.0f to %.0f\n", -pow(2, 32 - 1), pow(2, 32 - 1) - 1);
+    printf("Unsigned int: 0 to %u\n", (unsigned int)pow(2, sizeof(int) * 8) - 1);
+
     printf("Minimum value for a unsigned int: %u\n", 0);
-    printf("MAximum value for a unsigned int: %u\n", UINT_MAX);
+    printf("Maximum value for a unsigned int: %u\n", (unsigned int)pow(2, (sizeof(unsigned int) * 8)) - 1);
     printf("-------------\n");
     printf("Minimum value for a signed long int: %ld\n", LONG_MIN);
     printf("Maximum value for a signed long int: %ld\n", LONG_MAX);
