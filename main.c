@@ -31,7 +31,7 @@ int main(){
     printf("- Minimum value for a Unsigned Long Int: %d\n", 0);
     printf("- Maximum value for a Unsigned Long Int: %lu\n", ULONG_MAX);
     printf("-------------\n\n");
-    // direct computation. I used the pow function from the math.h library and the sizeof function to compute the values for each data type
+    // direct computation. I used the pow function from the math.h library and the sizeof operator to compute the values for each data type
     printf("Using direct computation:\n\n");
     printf("------------- Char\n");
     printf("- Minimum value for a Signed Char: %d\n", -(int)pow(2, sizeof(char) * (8 - 1)));
