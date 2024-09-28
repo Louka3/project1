@@ -8,7 +8,8 @@
 // by direct computation. Submit your code and a screenshot of the output. 
 
 int main(){
-    printf("Using limits.h:\n\n");
+    // using the Standard Headers to visualize the ranges.
+    printf("Using limits.h standard library header file:\n\n");
     printf("Minimum value for a Signed Char: %d\n", SCHAR_MIN);
     printf("Maximum value for a Signed Char: %d\n", SCHAR_MAX);
     printf("Minimum value for a Unsigned Char: %d\n", 0);
