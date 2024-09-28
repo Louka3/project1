@@ -21,7 +21,7 @@ int main(){
     printf("-------------\n");
     printf("Minimum value for a Signed Int: %i\n", INT_MIN);
     printf("Maximum value for a Signed Int: %i\n", INT_MAX);
-    printf("Minimum value for a Uunsigned Int: %u\n", 0);
+    printf("Minimum value for a Unsigned Int: %u\n", 0);
     printf("Maximum value for a Unsigned Int: %u\n", UINT_MAX);
     printf("-------------\n");
     printf("Minimum value for a Signed Long Int: %ld\n", LONG_MIN);
@@ -46,7 +46,6 @@ int main(){
     printf("Minimum value for a Unsigned Int: %u\n", 0);
     printf("Maximum value for a Unsigned Int: %.0f\n", pow(2, (sizeof(unsigned int) * 8)) - 1);
     printf("-------------\n");
-    // printf("Minimum value for a Signed Long Int: %.0f\n", -pow(2, (sizeof(signed long) * 8) - 1));
     printf("Minimum value for a Signed Long Int: %ld\n", (long)-pow(2, (sizeof(signed long) * 8) - 1));
     printf("Maximum value for a Signed Long Int: %ld\n", (long)(pow(2, (sizeof(signed long) * 8) - 1) - 1.0));
     printf("Minimum value for a Unsigned Long Int: %d\n", 0);
