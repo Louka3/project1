@@ -29,6 +29,7 @@ int main(){
     printf("Minimum value for a Unsigned Long Int: %d\n", 0);
     printf("Maximum value for a Unsigned Long Int: %lu\n", ULONG_MAX);
     printf("-------------\n\n");
+
     printf("Using direct computation:\n\n");
     printf("Minimum value for a Signed Char: %d\n", -(int)pow(2, sizeof(char) * (8 - 1)));
     printf("Maximum value for a Signed Char: %d\n", (int)pow(2, sizeof(char) * (8 - 1)) - 1);
@@ -45,8 +46,9 @@ int main(){
     printf("Minimum value for a Unsigned Int: %u\n", 0);
     printf("Maximum value for a Unsigned Int: %.0f\n", pow(2, (sizeof(unsigned int) * 8)) - 1);
     printf("-------------\n");
-    printf("Minimum value for a Signed Long Int: %.0f\n", -pow(2, (sizeof(signed long) * 8) - 1));
-    printf("Maximum value for a signed long int: %ld\n", (long)(pow(2, (sizeof(signed long) * 8) - 1) - 1.0));
+    // printf("Minimum value for a Signed Long Int: %.0f\n", -pow(2, (sizeof(signed long) * 8) - 1));
+    printf("Minimum value for a Signed Long Int: %ld\n", (long)-pow(2, (sizeof(signed long) * 8) - 1));
+    printf("Maximum value for a Signed Long Int: %ld\n", (long)(pow(2, (sizeof(signed long) * 8) - 1) - 1.0));
     printf("Minimum value for a Unsigned Long Int: %d\n", 0);
     printf("Maximum value for a Unsigned Long Int: %lu\n\n\n", (unsigned long)(pow(2, (sizeof(long) * 8)) - 1));
     return 0;
